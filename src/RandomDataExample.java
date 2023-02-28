@@ -29,5 +29,10 @@ public class RandomDataExample {
         }
         System.out.println("Datos en orden de aparición: " + queue);
 
+        // Using an array to display data in ascending order
+        int[] sortedArray = Arrays.copyOf(dataArray, dataArray.length);
+        Arrays.sort(sortedArray);
+        System.out.println("Datos en orden ascendente: " + Arrays.toString(sortedArray));
+
     }
 }
