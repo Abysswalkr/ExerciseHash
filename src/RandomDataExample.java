@@ -21,5 +21,13 @@ public class RandomDataExample {
                 hashMap.put(data, 1);
             }
         }
+
+        // Use Queue to show the data in acendent order
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < 100; i++) {
+            queue.offer(dataArray[i]);
+        }
+        System.out.println("Datos en orden de aparición: " + queue);
+
     }
 }
